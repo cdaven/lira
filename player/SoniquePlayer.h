@@ -1,0 +1,12 @@
+#ifndef SONIQUEPLAYER_H_HEADER_INCLUDED_C0E3E8CC
+#define SONIQUEPLAYER_H_HEADER_INCLUDED_C0E3E8CC
+#include "Player.h"
+
+//##ModelId=3F05F4A2006D
+class SoniquePlayer : public Player
+{
+};
+
+
+
+#endif /* SONIQUEPLAYER_H_HEADER_INCLUDED_C0E3E8CC */

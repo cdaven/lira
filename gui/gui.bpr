@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="gui.exe"/>
+    <OBJFILES value="gui.obj guimain.obj ..\song\SongTag.obj ..\song\FileManager.obj 
+      ..\song\Song.obj ..\song\SongManager.obj ..\song\ConcreteSongFacade.obj 
+      ..\importexport\ConcreteImportExportFacade.obj 
+      ..\importexport\ID3GenreParser.obj ..\importexport\ID3TagImpEx.obj 
+      ..\importexport\TagImpExFactory.obj ..\Mediator.obj 
+      ..\database\ConcreteDatabaseEngine.obj 
+      ..\playlist\ConcretePlaylistFacade.obj ..\playlist\PlaylistManager.obj 
+      ..\player\WindowsMediaPlayer.obj ..\player\Winamp2Player.obj 
+      ..\player\ConcretePlayerFacade.obj welcome1.obj welcome2.obj Settings.obj 
+      ..\song\SongProperty.obj songproperties.obj about.obj fsettings.obj 
+      splash.obj"/>
+    <RESFILES value="gui.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) guimain.dfm welcome1.dfm welcome2.dfm songproperties.dfm 
+      about.dfm fsettings.dfm splash.dfm"/>
+    <LIBFILES value="..\..\id3dll\id3lib.lib"/>
+    <LIBRARIES value="vclx.lib lmd50se_B6.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib lmd50se_B6.lib vclx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi vcldb.bpi vclx.bpi bdertl.bpi dsnap.bpi qrpt.bpi 
+      visualclx.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi 
+      inetdbxpress.bpi nmfast.bpi bcbie.bpi soaprtl.bpi indy.bpi 
+      bcb2kaxserver.bpi dxForumLibC6.bpi lmd50se_B6.bpi"/>
+    <PATHCPP value=".;..\song;..\importexport;..;..\database;..\playlist;..\player"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="NO_WIN32_LEAN_AND_MEAN;_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="gui.cpp"/>
+    <INCLUDEPATH value="..\;..;..\lib;..\player;$(BCB)\LIB\lmd50\MAIN;..\database;..\playlist;..\importexport;..\song;&quot;C:\Program Files\Borland\CBuilder\Projects&quot;;D:\programming\projects\code\mp3org\gui;$(BCB)\include;$(BCB)\include\vcl;D:\programming\components\id3lib\include"/>
+    <LIBPATH value="..\;..;..\lib;..\player;$(BCB)\LIB\lmd50\MAIN;..\database;..\playlist;..\importexport;..\song;&quot;C:\Program Files\Borland\CBuilder\Projects&quot;;D:\programming\projects\code\mp3org\gui;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\. -I.. -I..\lib -I..\player -I$(BCB)\LIB\lmd50\MAIN -I..\database 
+      -I..\playlist -I..\importexport -I..\song 
+      -I&quot;C:\Program Files\Borland\CBuilder\Projects&quot; 
+      -ID:\programming\projects\code\mp3org\gui -I$(BCB)\include 
+      -I$(BCB)\include\vcl -ID:\programming\components\id3lib\include 
+      -src_suffix cpp -DNO_WIN32_LEAN_AND_MEAN -D_DEBUG -boa"/>
+    <CFLAG1 value="-vGc -vGt -vGd -Od -H=$(BCB)\lib\mp3org.csm -Hc -w -Vx -Ve -f- -X- -r- -a8 
+      -5 -b -k -y -v -vi- -tWC -tWM -c"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="cg32.lib $(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="gui.res" FORMNAME="" UNITNAME="gui.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="gui.cpp" FORMNAME="" UNITNAME="gui" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="guimain.cpp" FORMNAME="MainForm" UNITNAME="guimain" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\song\SongTag.cpp" FORMNAME="" UNITNAME="SongTag.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\song\FileManager.cpp" FORMNAME="" UNITNAME="FileManager.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\song\Song.cpp" FORMNAME="" UNITNAME="Song.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\song\SongManager.cpp" FORMNAME="" UNITNAME="SongManager.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\song\ConcreteSongFacade.cpp" FORMNAME="" UNITNAME="ConcreteSongFacade.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\importexport\ConcreteImportExportFacade.cpp" FORMNAME="" UNITNAME="ConcreteImportExportFacade.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\importexport\ID3GenreParser.cpp" FORMNAME="" UNITNAME="ID3GenreParser.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\importexport\ID3TagImpEx.cpp" FORMNAME="" UNITNAME="ID3TagImpEx.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\importexport\TagImpExFactory.cpp" FORMNAME="" UNITNAME="TagImpExFactory.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\id3dll\id3lib.lib" FORMNAME="" UNITNAME="id3lib.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Mediator.cpp" FORMNAME="" UNITNAME="Mediator" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\database\ConcreteDatabaseEngine.cpp" FORMNAME="" UNITNAME="ConcreteDatabaseEngine" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\playlist\ConcretePlaylistFacade.cpp" FORMNAME="" UNITNAME="ConcretePlaylistFacade.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\playlist\PlaylistManager.cpp" FORMNAME="" UNITNAME="PlaylistManager.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\player\WindowsMediaPlayer.cpp" FORMNAME="" UNITNAME="WindowsMediaPlayer.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\player\Winamp2Player.cpp" FORMNAME="" UNITNAME="Winamp2Player.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\player\ConcretePlayerFacade.cpp" FORMNAME="" UNITNAME="ConcretePlayerFacade.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="welcome1.cpp" FORMNAME="Welcome1Form" UNITNAME="welcome1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="welcome2.cpp" FORMNAME="Welcome2Form" UNITNAME="welcome2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Settings.cpp" FORMNAME="" UNITNAME="Settings" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\song\SongProperty.cpp" FORMNAME="" UNITNAME="SongProperty" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="songproperties.cpp" FORMNAME="SongPropertiesForm" UNITNAME="songproperties" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="about.cpp" FORMNAME="AboutForm" UNITNAME="about" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="fsettings.cpp" FORMNAME="SettingsForm" UNITNAME="fsettings" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="splash.cpp" FORMNAME="SplashForm" UNITNAME="splash" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=0
+Release=1
+Build=6
+Debug=0
+PreRelease=1
+Special=0
+Private=0
+DLL=0
+Locale=1053
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.1.6
+InternalName=
+LegalCopyright=Copyright © 2003 Christian Davén
+LegalTrademarks=
+OriginalFilename=
+ProductName=Lira! 1.0
+ProductVersion=1.0
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder\Bin\dclado60.bpl=Borland ADO DB Components
+C:\Program Files\Borland\CBuilder\Bin\dcldb60.bpl=Borland Database Components
+c:\program files\borland\cbuilder\Bin\dclbde60.bpl=Borland BDE DB Components
+c:\program files\borland\cbuilder\Bin\DCLIB60.bpl=InterBase Data Access Components
+c:\program files\borland\cbuilder\Bin\dclcds60.bpl=Borland Base Cached ClientDataset Component
+C:\Program Files\Borland\CBuilder\Bin\dclmid60.bpl=Borland MyBase DataAccess Components
+c:\program files\borland\cbuilder\Bin\dclbdecds60.bpl=Borland Local BDE ClientDataset Components
+c:\program files\borland\cbuilder\Bin\dcltee60.bpl=TeeChart Components
+c:\program files\borland\cbuilder\Bin\dcldss60.bpl=Borland Decision Cube Components
+c:\program files\borland\cbuilder\Bin\dcltqr60.bpl=TeeChart for QuickReport Components
+c:\program files\borland\cbuilder\Bin\dclclxdb60.bpl=Borland CLX Database Components
+c:\program files\borland\cbuilder\Bin\dclmcn60.bpl=Borland DataSnap Connection Components
+c:\program files\borland\cbuilder\Bin\DBWEBXPRT.BPL=Borland Web Wizard Package
+c:\program files\borland\cbuilder\Bin\dclwbm60.bpl=Borland InternetExpress Components
+c:\program files\borland\cbuilder\Bin\dclwebsnap60.bpl=Borland WebSnap Components
+c:\program files\borland\cbuilder\Bin\dcldbx60.bpl=Borland dbExpress Components
+c:\program files\borland\cbuilder\Bin\dcldbxcds60.bpl=Borland Local DBX ClientDataset Components
+C:\Program Files\ABC6\BCB6\dclABCC.bpl=ABC Version 6 Companion Edition
+
+[HistoryLists\hlIncludePath]
+Count=11
+Item0=..\;..;..\lib;..\player;$(BCB)\LIB\lmd50\MAIN;..\database;..\playlist;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;$(BCB)\include;$(BCB)\include\vcl;D:\programming\components\id3lib\include
+Item1=..\;..\lib;..\player;..;$(BCB)\LIB\lmd50\MAIN;..\database;..\playlist;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;$(BCB)\include;$(BCB)\include\vcl;D:\programming\components\id3lib\include
+Item2=..\lib;..\player;..\;..;$(BCB)\LIB\lmd50\MAIN;..\database;..\playlist;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;$(BCB)\include;$(BCB)\include\vcl;D:\programming\components\id3lib\include
+Item3=..\;$(BCB)\LIB\lmd50\MAIN;..;..\database;..\playlist;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;$(BCB)\include;$(BCB)\include\vcl;D:\programming\components\id3lib\include
+Item4=$(BCB)\LIB\lmd50\MAIN;..\;..;..\database;..\playlist;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;$(BCB)\include;$(BCB)\include\vcl;D:\programming\components\id3lib\include
+Item5=..\;..\database;..\playlist;..;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;$(BCB)\include;$(BCB)\include\vcl;D:\programming\components\id3lib\include
+Item6=..\database;..\playlist;..\;..;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;D:\programming\projects\code\mp3org\database;$(BCB)\include;$(BCB)\include\vcl;D:\programming\components\id3lib\include
+Item7=..\;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;D:\programming\projects\code\mp3org\database;$(BCB)\include;$(BCB)\include\vcl;D:\programming\components\id3lib\include
+Item8=..\;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;D:\programming\projects\code\mp3org\database;$(BCB)\include;$(BCB)\include\vcl
+Item9=D:\programming\projects\code\mp3org\database;$(BCB)\include;$(BCB)\include\vcl
+Item10=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=10
+Item0=..\;..;..\lib;..\player;$(BCB)\LIB\lmd50\MAIN;..\database;..\playlist;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\;..\lib;..\player;..;$(BCB)\LIB\lmd50\MAIN;..\database;..\playlist;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\lib;..\player;..\;..;$(BCB)\LIB\lmd50\MAIN;..\database;..\playlist;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\;$(BCB)\LIB\lmd50\MAIN;..;..\database;..\playlist;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;$(BCB)\lib\obj;$(BCB)\lib
+Item4=$(BCB)\LIB\lmd50\MAIN;..\;..;..\database;..\playlist;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;$(BCB)\lib\obj;$(BCB)\lib
+Item5=..\;..\database;..\playlist;..;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;$(BCB)\lib\obj;$(BCB)\lib
+Item6=..\database;..\playlist;..\;..;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;D:\programming\projects\code\mp3org\database;$(BCB)\lib\obj;$(BCB)\lib
+Item7=..\;..\importexport;..\song;C:\Program Files\Borland\CBuilder\Projects;D:\programming\projects\code\mp3org\gui;D:\programming\projects\code\mp3org\database;$(BCB)\lib\obj;$(BCB)\lib
+Item8=D:\programming\projects\code\mp3org\database;$(BCB)\lib\obj;$(BCB)\lib
+Item9=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=4
+Item0=NO_WIN32_LEAN_AND_MEAN;_DEBUG
+Item1=NO_WIN32_LEAN_AND_MEAN
+Item2=_DEBUG;NO_WIN32_LEAN_AND_MEAN
+Item3=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=1
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,12 @@
+#ifndef WINAMP3PLAYER_H_HEADER_INCLUDED_C0E3BAFF
+#define WINAMP3PLAYER_H_HEADER_INCLUDED_C0E3BAFF
+#include "Player.h"
+
+//##ModelId=3EFC7D38031C
+class Winamp3Player : public Player
+{
+};
+
+
+
+#endif /* WINAMP3PLAYER_H_HEADER_INCLUDED_C0E3BAFF */

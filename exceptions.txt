@@ -1,0 +1,29 @@
+"Generella" undantag ska finnas i Exceptions.h ...
+
+FILEIO
+- filenotfound
+- filenotwritable
+- filenotdeletable
+- foldernotfound
+
+CONTAINER
+- notincontainer
+- alreadyincontainer
+
+cantsavesettings ?
+
+badinitialisation ?
+
+
+... andra i respektive .h-fil
+
+DATABASE
+- badfileformat
+
+TAG
+- invalidtagtype
+- frameduplicate
+
+PLAYER
+- playernotavailable = noplayer
+- invalidplayertype
