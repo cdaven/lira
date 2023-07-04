@@ -1,6 +1,6 @@
 # Lira
 
-Lira indexes and organizes all your MP3 songs, and you can play them through Winamp.
+Lira indexed and organized all your MP3 songs, and you could play them through Winamp.
 
 This was my contribution to Datormagazin's big programming competition in 2003/2004. The winners were revealed in magazine #2, 2004. (I did not get any kind of prize or honorary mention.)
 
